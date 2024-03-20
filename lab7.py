@@ -1,8 +1,8 @@
-#task 1
+from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import pyplot as plt
 import numpy as np
 import time
-
+#task 1
 start = time.perf_counter()
 arr1 = np.random.rand(1000000)
 arr2 = np.random.rand(1000000)
@@ -13,8 +13,6 @@ print(end-start)
 
 
 #task 2
-import matplotlib.pyplot as plt
-import numpy as np
 time = []
 temperature = []
 turnovers = []
@@ -48,12 +46,7 @@ plt.ylabel('Turnovers')
 plt.title('Temperature vs Turnovers Correlation')
 plt.show()
 
-
 #task 3
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-
 x = np.linspace(-np.pi, np.pi, 100)
 y = np.sin(x) * np.cos(x)
 z = np.sin(x)
